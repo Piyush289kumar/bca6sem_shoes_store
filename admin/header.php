@@ -1,5 +1,5 @@
 <?php
-include("config.php");
+include ("config.php");
 session_start();
 if (!isset($_SESSION['username'])) {
     header("Location:{$hostname}/admin/");
@@ -7,30 +7,30 @@ if (!isset($_SESSION['username'])) {
 $current_page = basename($_SERVER['PHP_SELF']);
 $prefix_word = "ADMIN Panel";
 switch ($current_page) {
-        // case 'add-category.php':
-        //     $page_title = "{$prefix_word} - Category Add";
-        //     break;
-        // case 'add-post.php':
-        //     $page_title = "{$prefix_word} - Post Add";
-        //     break;
+    // case 'add-category.php':
+    //     $page_title = "{$prefix_word} - Category Add";
+    //     break;
+    // case 'add-post.php':
+    //     $page_title = "{$prefix_word} - Post Add";
+    //     break;
     case 'add-user.php':
         $page_title = "{$prefix_word} - User Add";
         break;
-        // case 'category.php':
-        //     $page_title = "{$prefix_word} - Category";
-        //     break;
-        // case 'post.php':
-        //     $page_title = "{$prefix_word} - Post";
-        //     break;
-        // case 'settings.php':
-        //     $page_title = "{$prefix_word} - Settings";
-        //     break;
-        // case 'update-category.php':
-        //     $page_title = "{$prefix_word} - Category Update";
-        //     break;
-        // case 'update-post.php':
-        //     $page_title = "{$prefix_word} - Post Update";
-        //     break;
+    // case 'category.php':
+    //     $page_title = "{$prefix_word} - Category";
+    //     break;
+    // case 'post.php':
+    //     $page_title = "{$prefix_word} - Post";
+    //     break;
+    // case 'settings.php':
+    //     $page_title = "{$prefix_word} - Settings";
+    //     break;
+    // case 'update-category.php':
+    //     $page_title = "{$prefix_word} - Category Update";
+    //     break;
+    // case 'update-post.php':
+    //     $page_title = "{$prefix_word} - Post Update";
+    //     break;
     case 'update-user.php':
         $page_title = "{$prefix_word} - User Update";
         break;
@@ -59,8 +59,6 @@ switch ($current_page) {
     <title>
         <?php echo ($page_title); ?>
     </title>
-
-
     <!-- Font Awesome Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Custom stlylesheet -->
@@ -81,7 +79,9 @@ switch ($current_page) {
             <div class="row logo_cover">
                 <!-- LOGO -->
                 <div class="col-md-3 logo_cover">
-                    <h3 class="heading text-center" style="font-weight:700; background:#fe6c00; padding:12px 24px; border-radius:8px; color:#fff;">Shoes Store</h3>
+                    <h3 class="heading text-center"
+                        style="font-weight:700; background:#fe6c00; padding:12px 24px; border-radius:8px; color:#fff;">
+                        Shoes Store</h3>
                 </div>
                 <!-- /LOGO -->
                 <!-- LOGO-Out -->
@@ -102,15 +102,12 @@ switch ($current_page) {
             <div class="row">
                 <div class="col-md-12">
                     <ul class="admin-menu">
-
-
                         <li>
                             <a href="post-read.php">Events</a>
                         </li>
-
                         <?php
                         if ($_SESSION['user_role'] == 1) {
-                        ?>
+                            ?>
                             <li>
                                 <a href="tracks-read.php">Tracks</a>
                             </li>
@@ -120,7 +117,7 @@ switch ($current_page) {
                             <li>
                                 <a href="users.php">Users</a>
                             </li>
-                        <?php
+                            <?php
                         }
                         ?>
                         <li>
