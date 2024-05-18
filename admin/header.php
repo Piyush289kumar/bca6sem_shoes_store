@@ -66,7 +66,7 @@ switch ($current_page) {
     <!-- Custom stlylesheet -->
     <link rel="stylesheet" href="../css/bootstrap.minDJ.css" />
     <link rel="stylesheet" href="../css/font-awesome.css">
-    <link rel="stylesheet" href="../css/adminstyle_centerDJ.css">
+    <link rel="stylesheet" href="../css/adminstyle_center.css">
     <link rel="shortcut icon" type="x-con" href="../img/music.png">
     <link rel="icon" href="../img/music.png" />
 </head>
