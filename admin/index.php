@@ -1,5 +1,5 @@
 <?php
-include("config.php");
+include ("config.php");
 session_start();
 if (isset($_SESSION['username'])) {
     echo "<script>window.location.href='$hostname/admin/post-read.php'</script>";
@@ -26,14 +26,16 @@ if (isset($_SESSION['username'])) {
             <div class="row">
                 <div class="col-md-offset-4 col-md-4">
                     <!-- logo -->
-                    <h3 class="heading text-center" style="font-weight:700; background:#fe6c00; padding:12px 24px; border-radius:8px; color:#fff;">Shoes Store</h3>
+                    <h3 class="heading text-center"
+                        style="font-weight:700; background:#fe6c00; padding:12px 24px; border-radius:8px; color:#fff;">
+                        Shoes Store</h3>
                     <!-- logo -->
                     <!-- <img class=" logo" src="images/news.jpg"> -->
                     <h3 class="heading text-center" style="font-weight:700">Login</h3>
                     <!-- Form Start -->
                     <?php
                     if (isset($_POST['login'])) {
-                        include("config.php");
+                        include ("config.php");
                         $username = mysqli_real_escape_string($conn, $_POST['username']);
                         $pass = mysqli_real_escape_string($conn, md5($_POST['password']));
                         $sql_user_pass_cheack = "SELECT * FROM user WHERE username = '{$username}' AND password = '{$pass}'" or die("Query Failed!! --> sql_user_pass_cheack");
@@ -70,7 +72,8 @@ if (isset($_SESSION['username'])) {
                     <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
                         <div class="form-group">
                             <label>Username</label>
-                            <input type="text" name="username" class="form-control" placeholder="" autocomplete="off" required>
+                            <input type="text" name="username" class="form-control" placeholder="" autocomplete="off"
+                                required>
                         </div>
                         <div class="form-group">
                             <label>Password</label>
@@ -79,8 +82,10 @@ if (isset($_SESSION['username'])) {
                         <!-- <div class="form-group">
                             <a href="forgot_password.php">Forgot password?</a>
                         </div> -->
-                        <input type="submit" name="login" class="btn btn-primary" value="&nbsp;&nbsp;login&nbsp;&nbsp;" />
-                        <button class="btn btn-secondary"><a href="<?php echo $hostname ?>">&nbsp;&nbsp;Back&nbsp;&nbsp;</a></button>
+                        <input type="submit" name="login" class="btn btn-primary"
+                            value="&nbsp;&nbsp;login&nbsp;&nbsp;" />
+                        <button class="btn btn-secondary"><a
+                                href="<?php echo $hostname ?>">&nbsp;&nbsp;Back&nbsp;&nbsp;</a></button>
                     </form>
                     <!-- /Form  End -->
                 </div>
