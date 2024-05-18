@@ -81,7 +81,7 @@ switch ($current_page) {
             <div class="row logo_cover">
                 <!-- LOGO -->
                 <div class="col-md-3 logo_cover">
-                    <h3 class="heading text-center" style="font-weight:700; background:#5C00CE; padding:12px 24px; border-radius:8px; color:#fff;">DJ Rishab</h3>
+                    <h3 class="heading text-center" style="font-weight:700; background:#fe6c00; padding:12px 24px; border-radius:8px; color:#fff;">Shoes Store</h3>
                 </div>
                 <!-- /LOGO -->
                 <!-- LOGO-Out -->
