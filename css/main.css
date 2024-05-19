@@ -5791,3 +5791,12 @@ label {
     color: #ffba00; }
 
 /*# sourceMappingURL=main.css.map */
+
+.whatappIcon{
+  height: 50px;
+  width:50px !important;
+  transition: all 0.3s ease-in;
+}
+.whatappIcon:hover{
+  scale: 1.2;
+}
