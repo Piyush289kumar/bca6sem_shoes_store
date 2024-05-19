@@ -61,7 +61,7 @@ if (isset($_POST['submit'])) {
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h1 class="admin-heading">Modify Event Details</h1>
+                <h1 class="admin-heading">Modify Product Details</h1>
             </div>
             <div class="col-md-2">
                 <a class="add-new" style="background:#E1412E; border-radius:16px;" href="post-read.php"><i class="fa-solid fa-arrow-left"></i>
@@ -81,22 +81,22 @@ if (isset($_POST['submit'])) {
                                 <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['aid'] ?>" placeholder="">
                             </div>
                             <div class="form-group">
-                                <label>Event Date</label>
-                                <input type="Date" name="adate" class="form-control" value="<?php echo $row['adate'] ?>" placeholder="Event Date" required>
+                                <label>Date</label>
+                                <input type="Date" name="adate" class="form-control" value="<?php echo $row['adate'] ?>" placeholder="Date" required>
                             </div>
                             <div class="form-group">
-                                <label>Event Title</label>
-                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['atitle'] ?>" placeholder="Event Title" required>
+                                <label>Title</label>
+                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['atitle'] ?>" placeholder="Title" required>
                             </div>
 
                           
                             <div class="form-group">
-                                <label>Event Location</label>
-                                <input type="text" name="atype" class="form-control" value="<?php echo $row['atype'] ?>" placeholder="Event Location" required>
+                                <label>Price</label>
+                                <input type="text" name="atype" class="form-control" value="<?php echo $row['atype'] ?>" placeholder="Price" required>
                             </div>
                             
                             <div class="form-group">
-                                <label for="">Event Poster</label>
+                                <label for="">Poster</label>
                                 <input type="file" name="new-image">
                                 <img src="upload/<?php echo $row['aimg']; ?>" height="150px" style="border-radius: 4px; margin-top:12px;">
                                 <input type="hidden" name="old-image" value="<?php echo $row['aimg']; ?>">
