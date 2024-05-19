@@ -39,8 +39,8 @@
             <nav class="navbar navbar-expand-lg navbar-light main_box">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <!-- <a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a> -->
-                    <a class="navbar-brand logo_h" href="index.html">
+                    <!-- <a class="navbar-brand logo_h" href="index.php"><img src="img/logo.png" alt=""></a> -->
+                    <a class="navbar-brand logo_h" href="index.php">
                         <h2><b>Manas Sneakers</br></h2>
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -53,8 +53,8 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                         <ul class="nav navbar-nav menu_nav ml-auto">
-                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
                             <li class="nav-item"><a class="nav-link" href="admin/index.php">C-Panel</a></li>
                         </ul>
                     </div>
