@@ -1,8 +1,9 @@
 <?php include "header.php";
 if ($_SESSION['user_role'] == 0) {
     header("Location:{$hostname}/admin/");
-};
-include("config.php");
+}
+;
+include ("config.php");
 $user_id_getaddbar = $_GET['id'];
 $file_name = '';
 if (isset($_POST['submit'])) {
@@ -42,18 +43,18 @@ if (isset($_POST['submit'])) {
 
     $sql_update_user = "UPDATE achievement SET adate = '{$ndate}', atitle = '{$ntitle}', atype ='{$ntype}', aimg = '{$save_img_name}' WHERE aid ='{$user_id_getaddbar}'";
     if (mysqli_query($conn, $sql_update_user)) {
-?>
+        ?>
         <script>
             alert('Record is Update successfully !!')
         </script>
-    <?php
+        <?php
         echo "<script>window.location.href='$hostname/admin/post-read.php'</script>";
     } else {
-    ?>
+        ?>
         <script>
             alert('Record is not Update !!')
         </script>
-<?php
+        <?php
     }
 }
 ?>
@@ -64,47 +65,55 @@ if (isset($_POST['submit'])) {
                 <h1 class="admin-heading">Modify Product Details</h1>
             </div>
             <div class="col-md-2">
-                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="post-read.php"><i class="fa-solid fa-arrow-left"></i>
+                <a class="add-new" style="background:#E1412E; border-radius:16px;" href="post-read.php"><i
+                        class="fa-solid fa-arrow-left"></i>
                     Back</a>
             </div>
             <div class="col-md-offset-4 col-md-4">
                 <!-- Form Start -->
                 <!-- PHP CODE -->
-                <?php include("config.php");
+                <?php include ("config.php");
                 $sql_userdata_show_by_id = "SELECT * FROM achievement WHERE aid = '{$user_id_getaddbar}'";
                 $result_sql_userdata_show_by_id = mysqli_query($conn, $sql_userdata_show_by_id) or die("Query Die!!");
                 if (mysqli_num_rows($result_sql_userdata_show_by_id) > 0) {
                     while ($row = mysqli_fetch_assoc($result_sql_userdata_show_by_id)) {
-                ?>
-                        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data" autocomplete="off">
+                        ?>
+                        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" enctype="multipart/form-data"
+                            autocomplete="off">
                             <div class="form-group">
-                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['aid'] ?>" placeholder="">
+                                <input type="hidden" name="user_id" class="form-control" value="<?php echo $row['aid'] ?>"
+                                    placeholder="">
                             </div>
                             <div class="form-group">
                                 <label>Date</label>
-                                <input type="Date" name="adate" class="form-control" value="<?php echo $row['adate'] ?>" placeholder="Date" required>
+                                <input type="Date" name="adate" class="form-control" value="<?php echo $row['adate'] ?>"
+                                    placeholder="Date" required>
                             </div>
                             <div class="form-group">
                                 <label>Title</label>
-                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['atitle'] ?>" placeholder="Title" required>
+                                <input type="text" name="atitle" class="form-control" value="<?php echo $row['atitle'] ?>"
+                                    placeholder="Title" required>
                             </div>
 
-                          
+
                             <div class="form-group">
                                 <label>Price</label>
-                                <input type="text" name="atype" class="form-control" value="<?php echo $row['atype'] ?>" placeholder="Price" required>
+                                <input type="text" name="atype" class="form-control" value="<?php echo $row['atype'] ?>"
+                                    placeholder="Price" required>
                             </div>
-                            
+
                             <div class="form-group">
                                 <label for="">Poster</label>
                                 <input type="file" name="new-image">
-                                <img src="upload/<?php echo $row['aimg']; ?>" height="150px" style="border-radius: 4px; margin-top:12px;">
+                                <img src="upload/<?php echo $row['aimg']; ?>" height="150px"
+                                    style="border-radius: 4px; margin-top:12px;">
                                 <input type="hidden" name="old-image" value="<?php echo $row['aimg']; ?>">
                             </div>
-                            <input type="submit" name="submit" class="btn btn-primary" style="border-radius:16px;" value="Update" required />
+                            <input type="submit" name="submit" class="btn btn-primary" style="border-radius:16px;"
+                                value="Update" required />
                         </form>
                         <!-- /Form -->
-                <?php
+                        <?php
                     }
                 } ?>
                 <!-- PHP CODE -->

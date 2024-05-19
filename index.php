@@ -10,13 +10,11 @@
 						<div class="col-lg-5 col-md-6">
 							<div class="banner-content">
 								<h1>Nike New <br>Collection!</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-									incididunt ut labore et
-									dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-								<div class="add-bag d-flex align-items-center">
-									<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-									<span class="add-text text-uppercase">Add to Bag</span>
-								</div>
+								<p>Elevate Your Style with Our Exclusive Collection
+									Welcome to <b>Manas Sneakers, </b>where fashion meets comfort and quality.
+									Our meticulously curated collection of shoes is designed to cater to all your
+									footwear needs, whether you're looking for the latest trends, timeless classics, or
+									everyday essentials..</p>								
 							</div>
 						</div>
 						<div class="col-lg-7">
@@ -30,13 +28,11 @@
 						<div class="col-lg-5">
 							<div class="banner-content">
 								<h1>Nike New <br>Collection!</h1>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-									incididunt ut labore et
-									dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-								<div class="add-bag d-flex align-items-center">
-									<a class="add-btn" href=""><span class="lnr lnr-cross"></span></a>
-									<span class="add-text text-uppercase">Add to Bag</span>
-								</div>
+								<p>Elevate Your Style with Our Exclusive Collection
+									Welcome to Manas Sneakers, where fashion meets comfort and quality.
+									Our meticulously curated collection of shoes is designed to cater to all your
+									footwear needs, whether you're looking for the latest trends, timeless classics, or
+									everyday essentials..</p>
 							</div>
 						</div>
 						<div class="col-lg-7">
@@ -51,7 +47,6 @@
 	</div>
 </section>
 <!-- End banner Area -->
-
 <!-- start features Area -->
 <section class="features-area section_gap">
 	<div class="container">
@@ -100,7 +95,6 @@
 	</div>
 </section>
 <!-- end features Area -->
-
 <!-- Start category Area -->
 <section class="category-area">
 	<div class="container">
@@ -168,7 +162,6 @@
 	</div>
 </section>
 <!-- End category Area -->
-
 <!-- start product Area -->
 <section class="owl-carousel active-product-area section_gap">
 	<!-- single product slide -->
@@ -198,7 +191,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -231,7 +223,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -296,7 +287,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -329,7 +319,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -362,7 +351,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -395,7 +383,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -428,7 +415,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -479,7 +465,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -512,7 +497,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -545,7 +529,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -578,7 +561,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -611,7 +593,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -644,7 +625,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -677,7 +657,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -710,7 +689,6 @@
 								<h6 class="l-through">$210.00</h6>
 							</div>
 							<div class="prd-bottom">
-
 								<a href="" class="social-info">
 									<span class="ti-bag"></span>
 									<p class="hover-text">add to bag</p>
@@ -736,7 +714,6 @@
 	</div>
 </section>
 <!-- end product Area -->
-
 <!-- Start exclusive deal Area -->
 <section class="exclusive-deal-area">
 	<div class="container-fluid">
@@ -810,7 +787,6 @@
 	</div>
 </section>
 <!-- End exclusive deal Area -->
-
 <!-- Start brand Area -->
 <section class="brand-area section_gap">
 	<div class="container">
@@ -834,7 +810,6 @@
 	</div>
 </section>
 <!-- End brand Area -->
-
 <!-- Start related-product Area -->
 <section class="related-product-area section_gap_bottom">
 	<div class="container">
@@ -972,6 +947,4 @@
 	</div>
 </section>
 <!-- End related-product Area -->
-
-
 <?php include ('footer.php') ?>
