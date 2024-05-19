@@ -7,7 +7,7 @@ if ($_SESSION['user_role'] == 0) {
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <h1 class="admin-heading">Add Event</h1>
+                <h1 class="admin-heading">Add Product</h1>
             </div>
             <div class="col-md-2">
                 <a class="add-new" style="background:#E1412E; border-radius:16px; margin-bottom:25px;" href="post-read.php"><i class="fa-solid fa-arrow-left"></i> Back</a>
@@ -65,23 +65,23 @@ if ($_SESSION['user_role'] == 0) {
                 ?>
                 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST" autocomplete="off" enctype="multipart/form-data">
                     <div class="form-group">
-                        <label>Event Date</label>
-                        <input type="date" name="adate" class="form-control" placeholder="Event Date" required>
+                        <label>Product Entry Date</label>
+                        <input type="date" name="adate" class="form-control" placeholder="Date" required>
                     </div>
                     <div class="form-group">
-                        <label>Event Title</label>
-                        <input type="text" name="atitle" class="form-control" placeholder="Event Title" required>
+                        <label>Title</label>
+                        <input type="text" name="atitle" class="form-control" placeholder="Title" required>
                     </div>
 
                     <div class="form-group">
-                        <label>Event Location</label>
-                        <input type="text" name="atype" class="form-control" placeholder="Event Location" required>
+                        <label>Event Price</label>
+                        <input type="text" name="atype" class="form-control" placeholder="Price" required>
                     </div>
 
                    
 
                     <div class="form-group">
-                        <label for="exampleInputPassword1">Event Poster</label>
+                        <label for="exampleInputPassword1">Poster</label>
                         <input type="file" name="fileToUpload" required>
                     </div>
                     <input type="submit" name="save" class="btn btn-primary" style="border-radius:16px;" value="Save" required />
