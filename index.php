@@ -189,7 +189,7 @@
 								<h6>₹ <?php echo ($row['atype']) ?></h6>
 							</div>
 							<div class="prd-bottom">
-								<a href="whatsapp:contact=+918817762774@s.whatsapp.com&message=I'd like to chat with you">
+								<a href="https://api.whatsapp.com/send?phone=+917611187538&amp;text=I'd like to chat with you!">
 									<img src="img/whatsapppng.png" alt="Whats App" class="whatappIcon">
 								</a>
 							</div>
