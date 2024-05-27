@@ -30,7 +30,6 @@
 						<h6>Jabalpur, Pin - 482002</h6>
 						<p>Madhya Pradesh, India</p>
 					</div>
-					
 					<div class="info_item">
 						<i class="lnr lnr-phone-handset"></i>
 						<h6><a href="#">00 (440) 9865 562</a></h6>
