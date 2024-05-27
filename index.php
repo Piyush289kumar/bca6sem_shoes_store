@@ -164,6 +164,7 @@
 	</div>
 	<div class="row">
 		<!-- PHP CODE -->
+		
 		<?php
 		include ("config.php");
 		if (isset($_GET['page_num_index'])) {
