@@ -82,6 +82,11 @@ if (isset($_SESSION['username'])) {
                         <!-- <div class="form-group">
                             <a href="forgot_password.php">Forgot password?</a>
                         </div> -->
+
+                        Forgot Password?<a href="forgot_password.php"> Reset Password</a>
+                        <br>
+                        <br>
+
                         <input type="submit" name="login" class="btn btn-primary"
                             value="&nbsp;&nbsp;login&nbsp;&nbsp;" />
                         <button class="btn btn-secondary"><a
