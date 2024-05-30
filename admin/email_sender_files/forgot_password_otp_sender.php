@@ -3,7 +3,7 @@ include('smtp/PHPMailerAutoload.php');
 include('config.php');
 session_start();
 $end_user_email = $_SESSION['user_otp_email'];
-$otp_username = $_SESSION['username'];
+$otp_username = $_SESSION['username_pwd'];
 // Email Variables
 $user_email = $_SESSION['user_otp_email'];
 $user_otp = '';

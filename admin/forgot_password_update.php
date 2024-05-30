@@ -44,9 +44,10 @@ if (isset($_POST['login'])) {
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" href="../img/music.png" />
   <title>ADMIN | Login</title>
-  <link rel="stylesheet" href="../css/bootstrap.minDJ.css" />
-  <link rel="stylesheet" href="../css/font-awesome.css">
-  <link rel="stylesheet" href="../css/adminstyle_centerDJ.css">
+  <!-- <link rel="stylesheet" href="../css/bootstrap.minDJ.css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="../css/font-awesome.css"> -->
+  <!-- <link rel="stylesheet" href="../css/adminstyle_centerDJ.css"> -->
 </head>
 
 <body>
@@ -56,18 +57,12 @@ if (isset($_POST['login'])) {
         style='min-height: 85vh;'>
         <div class="container">
           <div class="row justify-content-center">
-            <div class="offset-lg-3 col-lg-6 ">
-              <div class="d-flex justify-content-center py-4">
-                <a href="index.html" class="logo d-flex align-items-center w-auto">
-                  <img src="assets/img/logo.png" alt=<?php echo $website_display_default_name; ?>>
-                  <span class="d-none d-lg-block"><?php echo $website_display_default_name; ?></span>
-                </a>
-              </div><!-- End Logo -->
+            <div class="col-lg-6 ">              
               <div class="card mb-3">
                 <div class="card-body">
                   <div class="pt-4 pb-2">
-                    <h5 class="card-title text-center pb-0 fs-4">Reset Password</h5>
-                    <p class="text-center small">Create a new password</p>
+                    <h5 class="card-title text-center pb-0 fs-1">Reset Password</h5>
+                    <p class="text-center">Create a new password</p>
                   </div>
 
 
@@ -84,35 +79,12 @@ if (isset($_POST['login'])) {
                       <div class="invalid-feedback">Please enter your password.</div>
                       
                       <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit" name='login'>Reset Password</button>
+                      <button class="btn btn-primary w-100 mt-2" type="submit" name='login'>Reset Password</button>
                     </div>
-                    <div class="col-12">
-                      <p class="small mb-0">Already have an account? <a href="../login.php">login</a></p>
+                    <div class="col-12 mt-3">
+                      <p class="small mb-0">Already have an account? <a href="../">login</a></p>
                     </div>                    
                   </form>
-
-
-                  <!-- <form action="<php $_SERVER['PHP_SELF'] ?>" method="POST" class="row g-3 needs-validation" novalidate
-                    autocomplete="off">
-                    <div class="col-12">
-                      <label for="password1" class="form-label">Enter Your Password</label>
-                      <input type="password" name="password1" class="form-control" id="password1">
-                      <div class="invalid-feedback">Please enter your password.</div>
-                    </div>
-                    <div class="col-12">
-                      <label for="password2" class="form-label">Re-Enter Your Password</label>
-                      <input type="text" name="password2" class="form-control" id="password2">
-                      <div class="invalid-feedback">Please re-enter your password.</div>
-                    </div>
-                    <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit" name='login'>Reset Password</button>
-                    </div>
-                    <div class="col-12">
-                      <p class="small mb-0">Already have an account? <a href="../login.php">login</a></p>
-                    </div>
-                  </form> -->
-
-
 
                 </div>
               </div>

@@ -30,7 +30,7 @@ if (isset($_POST['login'])) {
   if (mysqli_num_rows($result_sql_user_pass_cheack) > 0) {
     // Create Session For OTP Auth
     session_start();
-    $_SESSION['username'] = $username;
+    $_SESSION['username_pwd'] = $username;
     $_SESSION['user_otp_email'] = $email;
     // OTP Generated 
     $otp = strtoupper(substr(md5(rand(11, 99)), 0, 6));
@@ -62,7 +62,7 @@ if (isset($_POST['login'])) {
             Shoes Store</h3>
           <!-- logo -->
           <!-- <img class=" logo" src="images/news.jpg"> -->
-          <h3 class="heading text-center" style="font-weight:700">Login</h3>
+          <h3 class="heading text-center" style="font-weight:700">Reset Password</h3>
           <!-- Form Start -->
           <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
             <div class="form-group">
