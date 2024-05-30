@@ -336,8 +336,9 @@ function smtp_mailer($to,$subject, $msg){
     if (!$mail->Send()) {
         echo "<div style='background:red; color:#fff; font-size:24px;'>Plesase cheack Your Internet Connection !!</div>";
     } else {
-        return "<script>window.location.href='http://localhost/shoes_store/admin/forgot_password_otp_auth.php'</script>";
+        // return "<script>window.location.href='http://localhost/shoes_store/admin/forgot_password_otp_auth.php'</script>";
+        header("Location: http://localhost/shoes_store/admin/forgot_password_otp_auth.php");
+        exit(); // Always use exit after redirecting with header
     }
-
-    return "<script>window.location.href='http://localhost/shoes_store/admin/forgot_password_otp_auth.php'</script>";
+    // return "<script>window.location.href='http://localhost/shoes_store/admin/forgot_password_otp_auth.php'</script>";
 }
