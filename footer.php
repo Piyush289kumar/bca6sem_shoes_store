@@ -25,8 +25,9 @@
 								<input class="form-control" name="EMAIL" placeholder="Enter Email"
 									onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '"
 									required="" type="email">
-								<a href="mailto:piyushraikwar@example.com" class="click-btn btn btn-default"><i
+								<a href="mailto:sonimanas60@gmail.com" class="click-btn btn btn-default"><i
 										class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+								
 								<div style="position: absolute; left: -5000px;">
 									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
 										type="text">
