@@ -17,6 +17,7 @@
                         <th>Date</th>
                         <th>Title</th>
                         <th>Price</th>
+                        <th>Stock</th>
                         <th>Edit</th>
                         <th>Delete</th>
                     </thead>
@@ -54,6 +55,11 @@
                                     <td>
                                         <?php echo ($row['atype']) ?>
                                     </td>
+                                    <?php if (($row['stock'] == 0)) { ?>
+                                        <td class="text-danger">Out of Stock</td>
+                                    <?php } else { ?>
+                                        <td class="text-success">In Stock</td>
+                                    <?php } ?>
                                     <td class='edit'><a href='post-update.php?id=<?php echo ($row["aid"]) ?>'><i
                                                 class='fa fa-edit'></i></a></td>
                                     <td class='delete'><a href='post-delete.php?id=<?php echo ($row["aid"]) ?>'><i
