@@ -173,7 +173,7 @@
 		}
 		$record_limit = 10;
 		$offset = ($page_num_index_by_addbar - 1) * $record_limit;
-		$sql_show_user = "SELECT * FROM achievement WHERE active_record = 'Yes' ORDER BY aid DESC LIMIT {$offset},{$record_limit}";
+		$sql_show_user = "SELECT * FROM achievement WHERE active_record = 'Yes' AND stock != 0 ORDER BY aid DESC LIMIT {$offset},{$record_limit}";		
 		$result_sql_show_user = mysqli_query($conn, $sql_show_user) or die("Query Failed!!");
 		if (mysqli_num_rows($result_sql_show_user) > 0) {
 			$serial_num = $offset + 1;
