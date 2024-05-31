@@ -40,8 +40,9 @@ if (isset($_POST['submit'])) {
     $ndate = mysqli_real_escape_string($conn, $_POST['adate']);
     $ntitle = mysqli_real_escape_string($conn, $_POST['atitle']);
     $ntype = mysqli_real_escape_string($conn, $_POST['atype']);
+    $stock = mysqli_real_escape_string($conn, $_POST['stock']);
 
-    $sql_update_user = "UPDATE achievement SET adate = '{$ndate}', atitle = '{$ntitle}', atype ='{$ntype}', aimg = '{$save_img_name}' WHERE aid ='{$user_id_getaddbar}'";
+    $sql_update_user = "UPDATE achievement SET adate = '{$ndate}', atitle = '{$ntitle}', atype ='{$ntype}' , stock ='{$stock}', aimg = '{$save_img_name}' WHERE aid ='{$user_id_getaddbar}'";
     if (mysqli_query($conn, $sql_update_user)) {
         ?>
         <script>
@@ -100,6 +101,12 @@ if (isset($_POST['submit'])) {
                                 <label>Price</label>
                                 <input type="text" name="atype" class="form-control" value="<?php echo $row['atype'] ?>"
                                     placeholder="Price" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Stock</label>
+                                <input type="number" name="stock" class="form-control" value="<?php echo $row['stock'] ?>"
+                                    placeholder="stock: Yes = 1, No = 0">
                             </div>
 
                             <div class="form-group">
